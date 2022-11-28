@@ -69,8 +69,8 @@ fn validate_simulation() {
 fn simulate(starting_rabbits: i128) -> i32 {
     let mut days: i32 = 0;
     let mut rabbits: i128 = starting_rabbits;
-    while (rabbits > 1) {
-        if (rabbits % 2 == 0) {
+    while rabbits > 1 {
+        if rabbits % 2 == 0 {
             rabbits = rabbits / 2;
         } else {
             rabbits = rabbits * 3 + 1;
